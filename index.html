@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- head
+
+        Purpose:
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage)
+
+        When To Modify:
+        - [X] Project 2 (REQUIRED FEATURE) 
+        - [X] Project 2 (STRETCH FEATURE) (favicon)
+        - [ ] Any time after
+        -->
+        <title>Shoreline Cleanup</title>
+        <link rel="icon" href="./img/Starfish_Sea_Glass_fill.png">
+        <link rel="stylesheet" href="styles.css" />
+
+    </head>
+    
+    <body>
+    
+        <!-- navbar
+
+        Purpose:
+        - Navigation bar that allows users to jump to different sections of the webpage
+        - Also holds buttons for user settings (dark mode, reduce motion)
+
+        When To Modify:
+        - [ ] Project 4 (REQUIRED FEATURE)
+        - [ ] Project 5 (REQUIRED FEATURE) 
+        - [ ] Project 8 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        -->
+        <div class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><button id="theme-button">Toggle Dark Mode</button></li>
+                <li><button id="reduce-motion-button">Reduce Motion</button></li>
+            </ul>
+        </div>
+
+        <!-- headings
+
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage
+
+        When To Modify:
+        - [X] Project 2 (REQUIRED FEATURE) 
+        - [X] Project 3 (REQUIRED FEATURE) 
+        - [ ] Project 4 (REQUIRED FEATURE) 
+        - [ ] Any time after
+        -->
+        <section id="home">
+            <header class="header-container">
+                <div id="header-item">
+                    <div class="header-img-container">
+                        <img id="header-img" src="./img/Shoreline_logo.png" alt="Shoreline Cleanup Coalition logo">
+                    </div>
+                </div>
+
+                <div id="header-item">
+                    <h2>Let's KEEP the SEA trash FREE!</h2>
+                    <div class="header-button">
+                        <button type="button">Sign Up</button>
+                        <button type="button">Propose a Cleanup Site</button>
+                    </div>
+                </div>
+            </header>
+        </section>
+        <!-- about
+
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event
+
+        When To Modify:
+        - [X] Project 2 (REQUIRED FEATURE) 
+        - [X] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <section id="about">
+            <header class="about-container">
+                <div class="about-text">
+                    <h2>Coastal Cleanups Count</h2>
+                    <p>Coastal cleanups protect wildlife, keep our waters healthier, and make shoreline spaces safer 
+                        and more enjoyable for everyone. By removing trash before it washes into rivers 
+                        and oceans, volunteers help prevent animals from getting tangled in debris or 
+                        mistaking plastic for food. Each cleanup also raises community awareness, 
+                        inspiring everyday choices that help reduce pollution at the source.</p>
+
+                    <h3>What to Expect</h3>
+                    <h4>Helping hands, cleaner shores, and a clearer picture of our impact.</h4>
+                    <ul>
+                        <li> <b>Checkup:</b> <i>Check in with event leaders, pick up gloves and bags, and get a quick safety and orientation talk before heading out.</i></li>
+                        <li> <b>Cleanup:</b> <i>Walk the shoreline in small teams, collecting trash and recording unusual items to help track pollution trends.</i></li>
+                        <li> <b>Wrapup:</b> <i>Wrap up by tallying bags and debris, sharing any interesting finds, and snapping a group photo to celebrate your collective impact.</i></li>
+                    </ul>
+                </div>
+
+                <div class="about-media">
+                    <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/jXcoPO76UyA?si=FUMEL7v8hSrVrIAD" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe> 
+                </div>
+            </header>
+        </section>
+        <!-- schedule
+
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity
+
+        When To Modify:
+        - [X] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <section id="schedule" class="schedule-container">
+            <h2>Local Shoreline Cleanup Schedule</h2>
+     
+            <div class="schedule-item">
+                <div class="schedule-text">
+                    <h3>Saturday, June 6</h3>
+                    <p>Meet at the Main Street pier for the beach cleanup.</p>
+                </div>
+            
+                <div class="schedule-img">
+                    <img alt="View of beach and pier" src="./img/Pier_img.png"/>
+                </div>
+            </div>
+
+        <hr class="schedule-divider">
+
+            <!--<img alt="Image description" src="./img/example.png"/> -->
+            <div class="schedule-item">
+                <div class="schedule-text">
+                    <h3>Sunday, June 7</h3>
+                    <p>Meet at the boat ramp under the bridge for the Intracoastal Waterway cleanup.</p>
+                </div>
+                <div class="schedule-img">
+                    <img alt="Photo of local boat ramp" src="./img/boat_ramp.png"/>
+                </div>
+            </div>
+        
+        <hr class="schedule-divider">
+
+            <div class="schedule-item">
+                <div class="schedule-text">
+                    <h3>Monday, June 8</h3>
+                    <p>Celebrate World Ocean's Day and invite friends to next year's cleanup.</p>
+                </div>
+                <div class="image-center">
+                    <img alt="World Ocean's Day June 8, 2026" src="./img/Save_the_ocean.svg" width="350"/>
+                </div>
+            </div>
+        </section>
+        
+        <!-- rsvp
+        Purpose:
+        - Section for users to sign up for the event
+        - Contains a form for users to input their information, 
+        and a list of other users who have signed up
+
+        When To Modify:
+        - [ ] Project 6 (REQUIRED FEATURE) 
+        - [ ] Project 6 (STRETCH FEATURE) 
+        - [ ] Any time after
+        --> 
+        <div id="rsvp">
+            <h2>RSVP</h2>
+
+            <p id="rsvp-count">"⭐️ 3 people have RSVP'd to this event!"</p>
+            
+            <div class="rsvp-container">
+                <div class="rsvp-para">
+                    <p>Please use the form below to let us know which cleanup days 
+                        you'll be joining and how many people will be in your group. 
+                        <br><br>
+                        For the beach cleanup on Saturday, June 6, volunteers will 
+                        meet at the <u>Main Street pier</u>. 
+                        <br><br>
+                        For the Intracoastal 
+                        Waterway cleanup on Sunday, June 7, we'll gather at the 
+                        <u>Boat Ramp under the bridge</u>. 
+                        <br><br>
+                        We recommend arriving 15-20 
+                        minutes early to check in, pick up supplies such as gloves, 
+                        bags, and grabbers, and hear a brief safety overview. 
+                        Each event is expected to run for about two to three hours, 
+                        or until all assigned areas have been covered. 
+                        <br><br>
+                        At the end 
+                        of each day, we'll tally the number of bags collected and 
+                        note any unusual items as a simple way to measure our impact 
+                        and share results with the community.</p>
+                </div>
+                <div class="rsvp-participants">
+                    <p>🎟️ Wendy with a group of 5 RSVP'd.</p>
+                    <p>🎟️ Torvald with a group of 3 RSVP'd.</p>
+                    <p>🎟️ Leopold with a group of 2 RSVP'd.</p>
+                </div>
+            </div>
+
+            <!--- Sign RSVP Form --->
+            <div class="form-container">
+                <form id="rsvp-form" title="rsvp-form">
+
+                    <!-- form inputs go here -->
+                    <div class="form-group">
+                        <label for="name">Name:</label> 
+                        <input type="text" id="name" name="name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="homecity">Home City:</label>
+                        <input type="text" id="homecity" name="homecity">                    
+                    
+                    </div>
+
+                    <div class="form-group">
+                        <label for="groupsize">Group Size:</label>
+                        <input type="number" id="groupsize" name="groupsize" min="1">                       
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">                   
+                    </div>
+
+                    <fieldset>
+                        <legend>Location</legend>
+
+                        <input type="checkbox" id="beach" name="location" value="Beach">
+                        <label for="beach">Beach</label>
+                        
+                        <input type="checkbox" id="icw" name="location" value="ICW">
+                        <label for="icw">ICW</label>
+                    </fieldset>
+                    <!-- Submit button -->
+                    <div class="form-actions">
+                        <button id="rsvp-button" type="submit">Submit RSVP</button>
+                    </div>    
+                </form>
+                
+            </div>      
+        </div>
+ 
+         <!-- success modal
+
+        Purpose:
+        - Modal that appears when a user successfully signs up for the event
+        - Contains a personalized message and image
+
+        When To Modify:
+        - [ ] Project 9 (REQUIRED FEATURE)
+        - [ ] Project 9 (STRETCH FEATURE) 
+        - [ ] Any time after
+        --> 
+
+        <div id="thanks-modal" class="modal">
+            <div class="modal-container">
+                <button id="close-modal-button" type="button">x</button>
+                <div id="thanks-content-modal">
+                    <p>Beach Cleanup... 🚀 Engage! 🚀 
+                        <br>
+                        <br>
+                        Don't forget to arrive a few minutes early, and 
+                        definitely don't forget the rest of your cleanup crew!
+                    </p>
+                </div>
+                <div id="thanks-image-modal">
+                    <img alt="sunglasses dancing" src="./img/Sunglasses.svg">
+                </div>
+            </div>
+        </div>
+
+        <!-- links
+
+        Purpose:
+        - Links to other resources related to the event
+
+        When To Modify:
+        - [X] Project 2 (STRETCH FEATURE) [COMPLETED]
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <section id="links">
+            <h2>Links</h2>
+            <p>Participate in other beach cleanups or even Adopt A Beach</p>
+            <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+            <a class="block" href="https://www.volusia.org/services/growth-and-resource-management/environmental-management/get-involved/adopt-a-beach-form.stml">
+                <article>
+                    <h3>Adopt A Beach</h3>
+                    <p></p>
+                </article>
+            </a>
+
+            <a class="block" href="https://keepfloridabeautiful.org/get-involved/volunteer/">
+                <article>
+                    <h3>Keep Florida Beautiful</h3>
+                    <p></p>
+                </article>
+            </a>
+
+            <a class="block" href="https://spacecoast.surfrider.org/programs/beach-cleanups">
+                <article>
+                    <h3>Surfrider Foundation</h3>
+                    <p></p>
+                </article>
+            </a>
+
+            <a class="block" href="https://oceanconservancy.org/work/plastics/cleanups-icc/start-a-cleanup/">
+                <article>
+                    <h3>Start a Cleanup</h3>
+                    <p></p>
+                </article>
+            </a>
+        </section>
+            
+        <!-- footer -->
+        <footer class="footer">
+            <p>
+                <a href="https://keepfloridabeautiful.org/get-involved/volunteer/"
+                        target="_blank" rel="noopener noreferrer">Keep Florida Beautiful</a>
+                <a href="https://oceanconservancy.or/work/plastics/cleanups-icc/start-a-cleanup"
+                        target="_blank" rel="noopener noreferrer">Start a Cleanup</a>
+            </p>
+        </footer>
+        <!-- script -->
+        <script src="index.js"></script> 
+    </body>
+</html>
